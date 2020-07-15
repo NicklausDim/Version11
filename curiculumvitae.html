@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Thats my awesome Website">
+    <title>Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="curiculumvitae.html">Curiculum Vitae</a>
+    <a href="socialmedia.html">Social Media</a>
+    <a href="contact.html">Contact us!</a>
+    <a href="javascript:void(0);" class="icon" onclick="showHideMobileNavigation()">
+      <i class="fas fa-bars"></i>
+    </a>
+  </div>
+    
+    <div class="div1">
+    </div>
+    
+    <script>
+      function showHideMobileNavigation() {
+        var navigationElement = document.getElementById("myTopnav");
+        if (navigationElement.className === "topnav") {
+          navigationElement.className += " responsive";
+        } else {
+          navigationElement.className = "topnav";
+        }
+      }
+    </script>
+    <img class="me" src="me.jpg">
+    
+    <article class="cvcontent">
+      <h3 class="cv"><span>Web developing and webpage creation (2020-present)</span></h3>
+      <ul>
+      <li><span>Freelancing</span></li>
+      <span>Responsible for designing, coding and modifying websites, from layout to function and according to a client's specifications. Strive to create visually appealing sites that feature user-friendly design and clear navigation</span>
+    </ul>
+    <h3 class="cv"><span>Social Media Content Moderator (2017-2019)</span></h3>
+    <ul>
+      <li><span>Arvato Direct Services Potsdam GmbH, Berlin (Germany)</span> </li>
+      <br/>
+      <span>Social media content moderation (posts, storries, photos, videos, live videos)</span>
+      </ul>
+    <h3 class="cv"><span>Private tutor of English and Computing(2014-2017)</span></h3>
+      <ul>
+      <li><span>Freelancer</span></li>
+      <br/>
+      <span>Creating lessons for a variety of levels from pre-intermediate to advance. Responsibe for needs analysis and teaching in different situations with original material and resources, utilising the internet</span>
+      </ul>
+      
+    </article>
+    
+    
+    </body>
+</html>
